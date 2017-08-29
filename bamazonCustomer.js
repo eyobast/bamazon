@@ -110,36 +110,13 @@ function numberOfProduct(itemId) {
                         ], function(err, result1) {
                             if (err) throw err;
                             // console.log('result1 ' + JSON.stringify(result1, null, 2));
-                            var totalCost=result[0].price*answer.numberOfProduct;
+                            var totalCost = result[0].price * answer.numberOfProduct;
                             console.log("your total cost is: " + totalCost);
                             //console.log("thank you! Your items are shipped soon")
                             //setTimeout(runSearch, 1000);
                             process.exit(); //exit after purchase
                         });
                     }
-                    });
-
-
-                //setTimeout(function() { runSearch() }, 100);
-                //runSearch();
-            
-            //function check()
+                });
         });
 };
-
-// function check() {
-//     if (result[0].stock_quantity < answer.numberOfProduct) {
-//         console.log("Insufficient quantity!")
-//     } else {
-//         connection.query("UPDATE products SET ? WHERE ? ", [{
-//                 stock_quantity: result[0].stock_quantity - answer.numberOfProduct
-//             },
-//             {
-//                 item_id: itemId
-//             }
-//         ], function(err, result) {
-//             if (err) throw err;
-//             console.log("thank you! Your items are shipped soon")
-//         });
-//     }
-// }
