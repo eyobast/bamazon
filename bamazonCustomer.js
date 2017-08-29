@@ -112,7 +112,6 @@ function numberOfProduct(itemId) {
                             // console.log('result1 ' + JSON.stringify(result1, null, 2));
                             var totalCost = result[0].price * answer.numberOfProduct;
                             console.log("your total cost is: " + totalCost);
-                            //console.log("thank you! Your items are shipped soon")
                             //setTimeout(runSearch, 1000);
                             process.exit(); //exit after purchase
                         });
